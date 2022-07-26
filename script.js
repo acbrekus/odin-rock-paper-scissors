@@ -5,17 +5,15 @@ function getComputerChoice(arr) {
 const computerChoices = ['Rock', 'Paper', 'Scissors'];
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection = computerSelection) {
+    if (playerSelection.toLowerCase() = computerSelection.toLowerCase()) {
         return "It's a draw!";
-    } else if ((playerSelection === 'rock' && computerSelection === 'scissors') ||
-            (playerSelection === 'scissors' && computerSelection === 'paper') ||
-            (playerSelection === 'paper' && computerSelection === 'rock')) {
+    } else if ((playerSelection.toLowerCase() === 'rock' && computerSelection.toLowerCase() === 'scissors') ||
+            (playerSelection.toLowerCase() === 'scissors' && computerSelection.toLowerCase() === 'paper') ||
+            (playerSelection.toLowerCase() === 'paper' && computerSelection.toLowerCase() === 'rock')) {
             return `You won! ${playerSelection} beats ${computerSelection}.` 
     } else {
         return `You lost! ${computerSelection} beats ${playerSelection}.`
     }
-    
-
 }
 
 const playerSelection = "rock";
