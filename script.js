@@ -1,10 +1,6 @@
 function getComputerChoice(arr) {
- const randomIndex = Math.floor(Math.random() * arr.length);
- const computerPick = computerChoices[randomIndex];
- return computerPick;
+ return arr[(Math.floor(Math.random()*arr.length))];
 }
 
 const computerChoices = ['Rock', 'Paper', 'Scissors'];
-
-const computerSelection = getComputerChoice(computerChoices);
-console.log(computerSelection);
+console.log(getComputerChoice(computerChoices));
